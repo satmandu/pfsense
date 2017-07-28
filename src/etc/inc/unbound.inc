@@ -153,10 +153,10 @@ function unbound_generate_config_text($unboundcfg = NULL, $cfgsubdir = "") {
 
 	// Setup DNSSEC support
 	if (isset($unboundcfg['dnssec'])) {
-		$module_config = "validator iterator";
+		$module_config = "validator python iterator";
 		$anchor_file = "auto-trust-anchor-file: {$g['unbound_chroot_path']}{$cfgsubdir}/root.key";
 	} else {
-		$module_config = "iterator";
+		$module_config = "python iterator";
 	}
 
 	// Setup DNS Rebinding
