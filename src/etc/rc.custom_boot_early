@@ -1,0 +1,6 @@
+#!/bin/sh
+if [ -f /root/netflix-dns.sh ]; then
+        /bin/echo -n "Launching /root/netflix-dns.sh...";
+        /root/netflix-dns.sh
+        echo "Done"
+fi
